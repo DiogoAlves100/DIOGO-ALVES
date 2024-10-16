@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="icon" href="https://img.freepik.com/vetores-premium/negocios-logo-letra-n-vector-design-de-logotipo-utilizavel-para-logotipos-de-negocios-e-tecnologia_740796-3576.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://img.freepik.com/vetores-premium/negocios-logo-letra-n-vector-design-de-logotipo-utilizavel-para-logotipos-de-negocios-e-tecnologia_740796-3576.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0400ff;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3700ff;
+        }
+    </style>
+</head>
+<body>
+
+<form action="/cadastrar" method="POST">
+    <h2>Cadastro</h2>
+    
+    <label for="nome">Nome Completo</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+    
+    <label for="confirmar-senha">Confirmar Senha</label>
+    <input type="password" id="confirmar-senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
+    
+    <button type="submit">Cadastrar</button>
+</form>
+
+</body>
+</html>
